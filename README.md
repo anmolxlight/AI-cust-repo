@@ -14,39 +14,6 @@ A simple Spring Boot application demonstrating integration with MongoDB. This pr
 
 ---
 
-## 📂 Project Structure
-
-```
-demo2/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── example/
-│   │   │           └── demo2/
-│   │   │               ├── controller/
-│   │   │               │   └── YourModelController.java
-│   │   │               ├── model/
-│   │   │               │   └── YourModel.java
-│   │   │               ├── repository/
-│   │   │               │   └── YourModelRepository.java
-│   │   │               ├── service/
-│   │   │               │   └── YourModelService.java
-│   │   │               └── Demo2Application.java
-│   │   └── resources/
-│   │       └── application.properties
-│   └── test/
-│       └── java/
-│           └── com/
-│               └── example/
-│                   └── demo2/
-│                       └── Demo2ApplicationTests.java
-├── pom.xml
-└── README.md
-```
-
----
-
 ## 🔧 Technologies Used
 
 - **Spring Boot 3.x**
