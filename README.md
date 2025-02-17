@@ -1,4 +1,4 @@
-# Demo2 - Spring Boot with MongoDB Integration
+# Ai cust - Spring Boot with MongoDB Integration
 
 A simple Spring Boot application demonstrating integration with MongoDB. This project includes creating a model, saving data in MongoDB, and providing RESTful APIs for CRUD operations.
 
