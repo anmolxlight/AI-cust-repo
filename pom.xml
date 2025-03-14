@@ -53,6 +53,24 @@
         <scope>provided</scope>
     </dependency>
 
+	<dependency>
+		<groupId>com.stripe</groupId>
+		<artifactId>stripe-java</artifactId>
+		<version>24.9.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>jakarta.annotation</groupId>
+		<artifactId>jakarta.annotation-api</artifactId>
+		<version>2.1.1</version>
+	</dependency>
+
+	<dependency>
+		<groupId>com.elevenlabs</groupId>
+		<artifactId>elevenlabs-java</artifactId>
+		<version>1.0.0</version>
+	</dependency>
+
 	</dependencies>
 
 	<build>
@@ -60,6 +78,14 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>3.4.2</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>
