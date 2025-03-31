@@ -1,23 +1,27 @@
 package com.example.demo2.controller;
 
-import com.example.demo2.model.YourModel;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.example.demo2.service.YourModelService;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/yourmodel")
+@RequestMapping("/yourmodel")
 public class YourModelController {
-
     private final YourModelService service;
 
-    public YourModelController(@Qualifier("yourModelServiceBean") YourModelService service) {
+    @Autowired
+    public YourModelController(YourModelService service) {
         this.service = service;
     }
 
-    // POST request to create a new YourModel object
-    @PostMapping("/create")
-    public YourModel createYourModel(@RequestBody YourModel model) {
-        return service.saveModel(model);
+    @GetMapping("/getAllDataObjects")
+    public List<Map<String, Object>> getAllDataObjects() {
+        return service.getAllDataObjects();
     }
 }

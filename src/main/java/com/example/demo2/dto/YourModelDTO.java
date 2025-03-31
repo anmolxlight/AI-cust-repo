@@ -5,6 +5,5 @@ import lombok.Data;
 @Data
 public class YourModelDTO {
     private String id;
-    private String name;
-    // Add other fields as necessary
-} 
+    private String data; // Changed from 'name' to 'data'
+}
